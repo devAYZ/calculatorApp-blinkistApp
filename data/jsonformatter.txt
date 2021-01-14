@@ -1,0 +1,107 @@
+﻿[
+  {
+    "title": "Blinks for you",
+    "description": "Based on your past preferences",
+    "access": "free",
+    "books": [
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      },
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "title": "Happy Blinks",
+    "description": "Blinks to get you excited for the day",
+    "access": "free",
+    "books": [
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      },
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "title": "Audiobooks",
+    "description": "Recommended by our creators",
+    "access": "free",
+    "books": [
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      },
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "title": "Trending Blinks",
+    "description": "What's popular right now",
+    "access": "locked",
+    "books": [
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      },
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "title": "Latest Blinks",
+    "description": "Titles recently added on blinkist",
+    "access": "locked",
+    "books": [
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      },
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "book_type": "audiobook",
+        "length": "144",
+        "image": ""
+      }
+    ]
+  }
+]
