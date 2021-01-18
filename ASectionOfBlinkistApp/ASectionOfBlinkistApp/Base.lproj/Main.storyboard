@@ -40,7 +40,7 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" id="s9a-Hc-hwL"/>
                     <navigationItem key="navigationItem" title="Home" id="6cY-p2-Xzd">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="line.3.crossed.swirl.circle" catalog="system" id="bHQ-e8-LkR">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-settings" id="bHQ-e8-LkR">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -54,7 +54,7 @@
         <scene sceneID="qGD-zu-EEJ">
             <objects>
                 <tabBarController id="FPM-CX-LFS" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pXn-1p-3yc">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="pXn-1p-3yc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -224,7 +224,7 @@
         <image name="icons8-bookmark" width="32" height="32"/>
         <image name="icons8-home" width="32" height="32"/>
         <image name="icons8-search" width="32" height="32"/>
-        <image name="line.3.crossed.swirl.circle" catalog="system" width="128" height="121"/>
+        <image name="icons8-settings" width="25" height="25"/>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
