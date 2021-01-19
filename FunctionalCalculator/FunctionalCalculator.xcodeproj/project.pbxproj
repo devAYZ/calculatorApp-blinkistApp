@@ -58,11 +58,11 @@
 			children = (
 				0479902425B55A5300A7CDEC /* AppDelegate.swift */,
 				0479902625B55A5300A7CDEC /* SceneDelegate.swift */,
+				0479903225B55A5600A7CDEC /* Info.plist */,
 				0479907D25B6534A00A7CDEC /* Model */,
 				0479907B25B6531D00A7CDEC /* View */,
 				0479907C25B6533D00A7CDEC /* Controller */,
 				0479908225B655D200A7CDEC /* Resources */,
-				0479908125B6552100A7CDEC /* Supporting Files */,
 			);
 			path = FunctionalCalculator;
 			sourceTree = "<group>";
@@ -87,14 +87,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0479908125B6552100A7CDEC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0479903225B55A5600A7CDEC /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0479908225B655D200A7CDEC /* Resources */ = {
