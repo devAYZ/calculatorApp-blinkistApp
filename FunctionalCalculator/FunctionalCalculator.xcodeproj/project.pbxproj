@@ -13,6 +13,7 @@
 		0479902C25B55A5300A7CDEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0479902A25B55A5300A7CDEC /* Main.storyboard */; };
 		0479902E25B55A5600A7CDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0479902D25B55A5600A7CDEC /* Assets.xcassets */; };
 		0479903125B55A5600A7CDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0479902F25B55A5600A7CDEC /* LaunchScreen.storyboard */; };
+		0479908E25B66B2F00A7CDEC /* RoundBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479908D25B66B2F00A7CDEC /* RoundBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0479902D25B55A5600A7CDEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0479903025B55A5600A7CDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0479903225B55A5600A7CDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0479908D25B66B2F00A7CDEC /* RoundBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		0479907D25B6534A00A7CDEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0479908D25B66B2F00A7CDEC /* RoundBorder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				0479902925B55A5300A7CDEC /* ViewController.swift in Sources */,
 				0479902525B55A5300A7CDEC /* AppDelegate.swift in Sources */,
+				0479908E25B66B2F00A7CDEC /* RoundBorder.swift in Sources */,
 				0479902725B55A5300A7CDEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devAYZ.FunctionalCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -347,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devAYZ.FunctionalCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
