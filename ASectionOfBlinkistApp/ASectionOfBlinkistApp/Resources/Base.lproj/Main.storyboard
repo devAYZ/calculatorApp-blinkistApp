@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="pfV-dN-gp9">
             <objects>
-                <collectionViewController id="7Rf-qM-QlQ" customClass="HomeCollectionViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="7Rf-qM-QlQ" customClass="HomeViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="69m-bv-e5i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,31 +25,31 @@
                             <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Book" id="2Ub-8r-8yf" userLabel="Book" customClass="BookCell" customModule="ASectionOfBlinkistApp" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Book" id="eHc-Zm-WdG" customClass="BookCell" customModule="ASectionOfBlinkistApp" customModuleProvider="target">
                                 <rect key="frame" x="15" y="15" width="140" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HNt-ap-NaO">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FBi-6O-lL8">
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98I-RH-8co">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IK0-K9-owq">
                                             <rect key="frame" x="10" y="10" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-jU-C4T">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXZ-N1-Jz4">
                                             <rect key="frame" x="10" y="134" width="120" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <connections>
-                                    <outlet property="imageView" destination="98I-RH-8co" id="Xf7-U7-Hzm"/>
-                                    <outlet property="name" destination="vb3-jU-C4T" id="1hr-RX-r84"/>
-                                    <outlet property="title" destination="vb3-jU-C4T" id="VrG-ZU-axb"/>
+                                    <outlet property="imageView" destination="IK0-K9-owq" id="0rv-7N-Hh7"/>
+                                    <outlet property="name" destination="DXZ-N1-Jz4" id="i4d-cc-sql"/>
+                                    <segue destination="D6i-R4-ep8" kind="show" id="QfO-Kd-T71"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -75,21 +75,21 @@
             <objects>
                 <viewController id="D6i-R4-ep8" customClass="ViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeC-Rf-9nA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-71-No3" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-gE-rFp">
-                                        <rect key="frame" x="120" y="65" width="175" height="166"/>
+                                        <rect key="frame" x="120" y="86" width="175" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="0.95068500847216475" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-v7-vIO" userLabel="DownView">
-                                <rect key="frame" x="0.0" y="296" width="414" height="600"/>
+                                <rect key="frame" x="0.0" y="208" width="414" height="600"/>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -106,10 +106,11 @@
                             <constraint firstAttribute="bottom" secondItem="Vdn-71-No3" secondAttribute="bottom" constant="600" id="uvZ-Q1-UgM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="uOT-de-imE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzK-Fe-6BG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1042.0289855072465" y="1116.2946428571429"/>
+            <point key="canvasLocation" x="-1386" y="1210"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qGD-zu-EEJ">
@@ -179,15 +180,21 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="EK3-Nu-Vpa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.055938184261322021" green="0.12485856562852859" blue="0.16653850674629211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Czc-RB-P3u">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="7Rf-qM-QlQ" kind="relationship" relationship="rootViewController" id="skC-gi-h9f"/>
                     </connections>
@@ -284,12 +291,16 @@
             <point key="canvasLocation" x="1293" y="-305"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="linkColor"/>
     <resources>
         <image name="icons8-bookmark" width="32" height="32"/>
         <image name="icons8-home" width="32" height="32"/>
         <image name="icons8-search" width="32" height="32"/>
         <image name="icons8-settings" width="25" height="25"/>
         <image name="user" width="100" height="139"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -298,6 +309,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
