@@ -16,6 +16,7 @@
 		0479907125B638A400A7CDEC /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479907025B638A400A7CDEC /* HomeCollectionViewController.swift */; };
 		0479907425B63E0000A7CDEC /* ExploreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479907325B63E0000A7CDEC /* ExploreCollectionViewController.swift */; };
 		0479907725B63E1E00A7CDEC /* LibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */; };
+		0479909925B71F3100A7CDEC /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479909825B71F3100A7CDEC /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0479907025B638A400A7CDEC /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		0479907325B63E0000A7CDEC /* ExploreCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewController.swift; sourceTree = "<group>"; };
 		0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
+		0479909825B71F3100A7CDEC /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		0479908625B6594500A7CDEC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0479909825B71F3100A7CDEC /* BookCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				0479904A25B55B0A00A7CDEC /* ViewController.swift in Sources */,
 				0479907125B638A400A7CDEC /* HomeCollectionViewController.swift in Sources */,
 				0479907425B63E0000A7CDEC /* ExploreCollectionViewController.swift in Sources */,
+				0479909925B71F3100A7CDEC /* BookCell.swift in Sources */,
 				0479904625B55B0A00A7CDEC /* AppDelegate.swift in Sources */,
 				0479907725B63E1E00A7CDEC /* LibraryCollectionViewController.swift in Sources */,
 				0479904825B55B0A00A7CDEC /* SceneDelegate.swift in Sources */,
