@@ -9,12 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var calculatorBtn: UIButton!
-
+    @IBOutlet weak var bigZeroBtn: UIButton!
+    @IBOutlet var allCalculatorBtn: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        calculatorBtn.roundBtn()
+        
+        for calculatorBtn in allCalculatorBtn{
+            calculatorBtn.roundBtn()
+        }
+        bigZeroBtn.layer.cornerRadius = 35.0
+        bigZeroBtn.clipsToBounds = true
     }
     
     @IBAction func currentPress(_ sender: UIButton){
@@ -22,4 +28,3 @@ class ViewController: UIViewController {
     }
     
 }
-
