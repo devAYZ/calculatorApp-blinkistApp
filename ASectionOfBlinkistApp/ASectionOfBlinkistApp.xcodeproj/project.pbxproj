@@ -18,6 +18,7 @@
 		0479907725B63E1E00A7CDEC /* LibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */; };
 		047990AC25B7336000A7CDEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990AB25B7336000A7CDEC /* HomeViewController.swift */; };
 		047990AF25B7351600A7CDEC /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990AE25B7351600A7CDEC /* BookCell.swift */; };
+		047990BA25B78F0C00A7CDEC /* HomeBookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990B925B78F0C00A7CDEC /* HomeBookHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
 		047990AB25B7336000A7CDEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		047990AE25B7351600A7CDEC /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		047990B925B78F0C00A7CDEC /* HomeBookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBookHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				047990AE25B7351600A7CDEC /* BookCell.swift */,
+				047990B925B78F0C00A7CDEC /* HomeBookHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				0479907125B638A400A7CDEC /* HomeCollectionViewController.swift in Sources */,
 				0479907425B63E0000A7CDEC /* ExploreCollectionViewController.swift in Sources */,
 				0479904625B55B0A00A7CDEC /* AppDelegate.swift in Sources */,
+				047990BA25B78F0C00A7CDEC /* HomeBookHeaderView.swift in Sources */,
 				047990AF25B7351600A7CDEC /* BookCell.swift in Sources */,
 				0479907725B63E1E00A7CDEC /* LibraryCollectionViewController.swift in Sources */,
 				047990AC25B7336000A7CDEC /* HomeViewController.swift in Sources */,
