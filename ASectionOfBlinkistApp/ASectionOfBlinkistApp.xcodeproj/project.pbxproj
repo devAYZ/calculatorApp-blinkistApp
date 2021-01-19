@@ -64,16 +64,56 @@
 			children = (
 				0479904525B55B0A00A7CDEC /* AppDelegate.swift */,
 				0479904725B55B0A00A7CDEC /* SceneDelegate.swift */,
-				0479904925B55B0A00A7CDEC /* ViewController.swift */,
-				0479907025B638A400A7CDEC /* HomeCollectionViewController.swift */,
-				0479904B25B55B0A00A7CDEC /* Main.storyboard */,
-				0479907325B63E0000A7CDEC /* ExploreCollectionViewController.swift */,
-				0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */,
-				0479904E25B55B0D00A7CDEC /* Assets.xcassets */,
-				0479905025B55B0D00A7CDEC /* LaunchScreen.storyboard */,
-				0479905325B55B0D00A7CDEC /* Info.plist */,
+				0479908725B6597100A7CDEC /* Model */,
+				0479908625B6594500A7CDEC /* View */,
+				0479908525B6593C00A7CDEC /* Controllers */,
+				0479908425B6592E00A7CDEC /* Resources */,
+				0479908325B6592400A7CDEC /* Supporting Files */,
 			);
 			path = ASectionOfBlinkistApp;
+			sourceTree = "<group>";
+		};
+		0479908325B6592400A7CDEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0479905325B55B0D00A7CDEC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0479908425B6592E00A7CDEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0479904E25B55B0D00A7CDEC /* Assets.xcassets */,
+				0479904B25B55B0A00A7CDEC /* Main.storyboard */,
+				0479905025B55B0D00A7CDEC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0479908525B6593C00A7CDEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0479904925B55B0A00A7CDEC /* ViewController.swift */,
+				0479907025B638A400A7CDEC /* HomeCollectionViewController.swift */,
+				0479907325B63E0000A7CDEC /* ExploreCollectionViewController.swift */,
+				0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0479908625B6594500A7CDEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0479908725B6597100A7CDEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
