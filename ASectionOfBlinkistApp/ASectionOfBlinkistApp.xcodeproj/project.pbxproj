@@ -64,21 +64,13 @@
 			children = (
 				0479904525B55B0A00A7CDEC /* AppDelegate.swift */,
 				0479904725B55B0A00A7CDEC /* SceneDelegate.swift */,
+				0479905325B55B0D00A7CDEC /* Info.plist */,
 				0479908725B6597100A7CDEC /* Model */,
 				0479908625B6594500A7CDEC /* View */,
 				0479908525B6593C00A7CDEC /* Controllers */,
 				0479908425B6592E00A7CDEC /* Resources */,
-				0479908325B6592400A7CDEC /* Supporting Files */,
 			);
 			path = ASectionOfBlinkistApp;
-			sourceTree = "<group>";
-		};
-		0479908325B6592400A7CDEC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0479905325B55B0D00A7CDEC /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0479908425B6592E00A7CDEC /* Resources */ = {
