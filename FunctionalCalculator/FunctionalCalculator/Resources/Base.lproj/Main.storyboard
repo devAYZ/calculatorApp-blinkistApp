@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="po2-A7-KY4" userLabel="First Stack View">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="po2-A7-KY4" userLabel="First Stack View">
                                 <rect key="frame" x="18" y="757" width="378" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-1k-PLc">
@@ -59,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="80" id="NNh-E5-XJM"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="BCY-gZ-bvl" userLabel="Second Stack View">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="BCY-gZ-bvl" userLabel="Second Stack View">
                                 <rect key="frame" x="18" y="662" width="378" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeB-jQ-0NN">
@@ -112,7 +112,7 @@
                                     <constraint firstAttribute="height" constant="80" id="HBb-M2-DBc"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="pLC-xR-WYD" userLabel="Third Stack View">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="pLC-xR-WYD" userLabel="Third Stack View">
                                 <rect key="frame" x="18" y="567" width="378" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo2-tA-aWi">
@@ -166,7 +166,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="gUU-X1-bzv"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-LU-jcb" userLabel="Fourth Stack View">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-LU-jcb" userLabel="Fourth Stack View">
                                 <rect key="frame" x="18" y="472" width="378" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xus-RQ-fL8">
@@ -221,7 +221,7 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="vA6-S3-aDu"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-sj-2oc" userLabel="Fifth Stack View">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-sj-2oc" userLabel="Fifth Stack View">
                                 <rect key="frame" x="18" y="377" width="378" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjV-ZR-Eh4">
