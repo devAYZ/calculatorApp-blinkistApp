@@ -19,6 +19,13 @@ class HomeViewController: UICollectionViewController {
         100
     }
     
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+//        return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.width/2)
+//    }
+//    
+    
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Book", for: indexPath) as? BookCell else{
             fatalError("Unable to dequeue Book Cell")
@@ -26,6 +33,7 @@ class HomeViewController: UICollectionViewController {
         
         return cell
     }
+    
     
 
 
