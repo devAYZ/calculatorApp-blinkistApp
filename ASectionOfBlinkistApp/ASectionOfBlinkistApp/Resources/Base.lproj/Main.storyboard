@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="pfV-dN-gp9">
             <objects>
-                <collectionViewController id="7Rf-qM-QlQ" customClass="ExploreCollectionViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="7Rf-qM-QlQ" customClass="HomeCollectionViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="69m-bv-e5i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                             <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2Ub-8r-8yf" userLabel="Book" customClass="BookCell" customModule="ASectionOfBlinkistApp" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Book" id="2Ub-8r-8yf" userLabel="Book" customClass="BookCell" customModule="ASectionOfBlinkistApp" customModuleProvider="target">
                                 <rect key="frame" x="15" y="15" width="140" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HNt-ap-NaO">
@@ -46,6 +46,11 @@
                                     </subviews>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="imageView" destination="98I-RH-8co" id="Xf7-U7-Hzm"/>
+                                    <outlet property="name" destination="vb3-jU-C4T" id="1hr-RX-r84"/>
+                                    <outlet property="title" destination="vb3-jU-C4T" id="VrG-ZU-axb"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
