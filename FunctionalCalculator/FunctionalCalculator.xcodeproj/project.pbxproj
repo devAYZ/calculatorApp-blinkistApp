@@ -58,13 +58,53 @@
 			children = (
 				0479902425B55A5300A7CDEC /* AppDelegate.swift */,
 				0479902625B55A5300A7CDEC /* SceneDelegate.swift */,
-				0479902825B55A5300A7CDEC /* ViewController.swift */,
-				0479902A25B55A5300A7CDEC /* Main.storyboard */,
-				0479902D25B55A5600A7CDEC /* Assets.xcassets */,
-				0479902F25B55A5600A7CDEC /* LaunchScreen.storyboard */,
-				0479903225B55A5600A7CDEC /* Info.plist */,
+				0479907D25B6534A00A7CDEC /* Model */,
+				0479907B25B6531D00A7CDEC /* View */,
+				0479907C25B6533D00A7CDEC /* Controller */,
+				0479908225B655D200A7CDEC /* Resources */,
+				0479908125B6552100A7CDEC /* Supporting Files */,
 			);
 			path = FunctionalCalculator;
+			sourceTree = "<group>";
+		};
+		0479907B25B6531D00A7CDEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0479907C25B6533D00A7CDEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0479902825B55A5300A7CDEC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0479907D25B6534A00A7CDEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0479908125B6552100A7CDEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0479903225B55A5600A7CDEC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0479908225B655D200A7CDEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0479902D25B55A5600A7CDEC /* Assets.xcassets */,
+				0479902A25B55A5300A7CDEC /* Main.storyboard */,
+				0479902F25B55A5600A7CDEC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devAYZ.FunctionalCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devAYZ.FunctionalCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
