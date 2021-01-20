@@ -86,17 +86,50 @@ class ViewController: UIViewController {
                     display.text! += "9"
                 }
             case ".":
-                display.text! += "."
+                if display.text!.isEmpty{
+                    display.text! += "0."
+                }else if display.text!.last == "."{
+                    display.text! += ""
+                }
+                else{
+                    display.text! += "."
+                }
             case "+":
-                display.text! += "+"
+                if display.text!.isEmpty || display.text!.last == "+"{
+                    display.text! += ""
+                }else if display.text!.last == "-"{
+                    display.text!.removeLast()
+                    display.text! += "+"
+                }else{
+                    display.text! += "+"
+                }
             case "-":
-                display.text! += "-"
+                if display.text!.isEmpty || display.text!.last == "-"{
+                    display.text! += ""
+                }else if display.text!.last == "+"{
+                    display.text!.removeLast()
+                    display.text! += "-"
+                }else{
+                    display.text! += "-"
+                }
             case "x":
-                display.text! += "x"
+                if display.text!.isEmpty || display.text!.last == "*" || display.text!.last == "-" || display.text!.last == "+"{
+                    display.text! += ""
+                }else if display.text!.last == "/"{
+                    display.text!.removeLast()
+                    display.text! += "*"
+                }else{
+                    display.text! += "*"
+                }
             case "⁒":
-                display.text! += "/"
-            case "%":
-                display.text! += "%"
+                if display.text!.isEmpty || display.text!.last == "/" || display.text!.last == "-" || display.text!.last == "+"{
+                    display.text! += ""
+                }else if display.text!.last == "*"{
+                    display.text!.removeLast()
+                    display.text! += "/"
+                }else{
+                    display.text! += "/"
+                }
             case "+/-":
                 if display.text!.first != "-"{
                     display.text!.insert("-", at: display.text!.startIndex)
@@ -109,5 +142,23 @@ class ViewController: UIViewController {
             }
         }
     
+    }
+    
+    @IBAction func modulusSign(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func acClear(_ sender: UIButton) {
+        display.text!.removeAll()
+    }
+    @IBAction func calcEquals(_ sender: UIButton) {
+        if display.text!.isEmpty{
+            display.text! += ""
+        }else{
+            let exp: NSExpression = NSExpression(format: display.text!)
+            let result = exp.expressionValue(with:nil, context: nil) as! Double
+            display.text! = String(result)
+        }
+        
     }
 }

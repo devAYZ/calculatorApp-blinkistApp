@@ -34,6 +34,9 @@
                                                         <state key="normal" title="AC">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="acClear:" destination="0lw-7j-FRK" eventType="touchUpInside" id="bk2-Ce-4j7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5f-E9-qTD">
                                                         <rect key="frame" x="99" y="0.0" width="80" height="80"/>
@@ -56,7 +59,7 @@
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="currentPress:" destination="0lw-7j-FRK" eventType="touchUpInside" id="L2h-In-pkq"/>
+                                                            <action selector="modulusSign:" destination="0lw-7j-FRK" eventType="touchUpInside" id="3H0-JL-85d"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUK-9L-3ar">
@@ -329,6 +332,9 @@
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="calcEquals:" destination="0lw-7j-FRK" eventType="touchUpInside" id="94w-Un-VsT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
