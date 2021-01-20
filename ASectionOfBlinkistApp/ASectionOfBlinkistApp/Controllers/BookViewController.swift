@@ -12,8 +12,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        roundBuyBook.layer.cornerRadius = 25
+        roundBuyBook.clipsToBounds = true
     }
 
-
+    @IBAction func buyBook(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var roundBuyBook: UIButton!
 }
 

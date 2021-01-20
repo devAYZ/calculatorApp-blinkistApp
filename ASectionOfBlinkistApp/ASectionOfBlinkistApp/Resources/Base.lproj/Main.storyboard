@@ -126,36 +126,71 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-71-No3" userLabel="TopView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-gE-rFp">
-                                        <rect key="frame" x="120" y="86" width="175" height="166"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-gE-rFp">
+                                        <rect key="frame" x="157" y="34.5" width="100" height="139"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="0.95068500847216475" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="W7I-gE-rFp" firstAttribute="centerY" secondItem="Vdn-71-No3" secondAttribute="centerY" id="aLB-Zc-yrp"/>
+                                    <constraint firstItem="W7I-gE-rFp" firstAttribute="centerX" secondItem="Vdn-71-No3" secondAttribute="centerX" id="hyK-Gc-hog"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-v7-vIO" userLabel="DownView">
                                 <rect key="frame" x="0.0" y="208" width="414" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lZI-f9-zjf">
+                                        <rect key="frame" x="111.5" y="193" width="191" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lZI-f9-zjf" firstAttribute="centerX" secondItem="Swo-v7-vIO" secondAttribute="centerX" id="Hng-GK-doj"/>
+                                    <constraint firstAttribute="bottom" secondItem="lZI-f9-zjf" secondAttribute="bottom" constant="370" id="Tjs-Ty-DVK"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAO-F7-Ias">
+                                <rect key="frame" x="35" y="192" width="344" height="55"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="⏍  Buy Sample Book  -$100.00">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyBook:" destination="D6i-R4-ep8" eventType="touchUpInside" id="QHX-Uh-Jfy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wuF-Lo-R0E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Swo-v7-vIO" secondAttribute="bottom" id="8c6-jg-StT"/>
+                            <constraint firstItem="wuF-Lo-R0E" firstAttribute="bottom" secondItem="dAO-F7-Ias" secondAttribute="bottom" constant="478" id="9iq-i4-haO"/>
                             <constraint firstItem="Vdn-71-No3" firstAttribute="top" secondItem="zeC-Rf-9nA" secondAttribute="top" id="DyS-fa-MZS"/>
+                            <constraint firstItem="dAO-F7-Ias" firstAttribute="top" secondItem="wuF-Lo-R0E" secondAttribute="top" constant="192" id="Jff-Y2-kLz"/>
                             <constraint firstItem="Swo-v7-vIO" firstAttribute="top" secondItem="Vdn-71-No3" secondAttribute="bottom" id="Jnc-Mm-GmB"/>
+                            <constraint firstItem="dAO-F7-Ias" firstAttribute="leading" secondItem="wuF-Lo-R0E" secondAttribute="leading" constant="35" id="O8J-Le-86s"/>
                             <constraint firstItem="Vdn-71-No3" firstAttribute="leading" secondItem="zeC-Rf-9nA" secondAttribute="leading" id="ZWf-te-et9"/>
                             <constraint firstItem="Swo-v7-vIO" firstAttribute="leading" secondItem="zeC-Rf-9nA" secondAttribute="leading" id="bhj-sF-Kcb"/>
                             <constraint firstAttribute="trailing" secondItem="Swo-v7-vIO" secondAttribute="trailing" id="dUn-8y-lPU"/>
                             <constraint firstAttribute="trailing" secondItem="Vdn-71-No3" secondAttribute="trailing" id="pZu-FO-Xrh"/>
+                            <constraint firstItem="wuF-Lo-R0E" firstAttribute="trailing" secondItem="dAO-F7-Ias" secondAttribute="trailing" constant="35" id="s6U-ra-94J"/>
                             <constraint firstAttribute="bottom" secondItem="Vdn-71-No3" secondAttribute="bottom" constant="600" id="uvZ-Q1-UgM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="uOT-de-imE"/>
+                    <connections>
+                        <outlet property="roundBuyBook" destination="dAO-F7-Ias" id="vhb-Mq-JQy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzK-Fe-6BG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1042" y="1156"/>
+            <point key="canvasLocation" x="-1042.0289855072465" y="1155.8035714285713"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qGD-zu-EEJ">
