@@ -25,14 +25,68 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nwb-PP-Evs">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCell" id="Nwb-PP-Evs" customClass="BookCell" customModule="ASectionOfBlinkistApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="31P-EB-0iB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEX-5F-K64">
+                                            <rect key="frame" x="8" y="8" width="398" height="225"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk6" translatesAutoresizingMaskIntoConstraints="NO" id="qNm-HZ-PF5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="217"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="qNm-HZ-PF5" secondAttribute="bottom" constant="8" id="B6D-Sa-Xfm"/>
+                                                <constraint firstAttribute="trailing" secondItem="qNm-HZ-PF5" secondAttribute="trailing" id="FKR-cR-Ai5"/>
+                                                <constraint firstItem="qNm-HZ-PF5" firstAttribute="leading" secondItem="lEX-5F-K64" secondAttribute="leading" id="hdO-hw-9VG"/>
+                                                <constraint firstItem="qNm-HZ-PF5" firstAttribute="top" secondItem="lEX-5F-K64" secondAttribute="top" id="jhH-jj-g1e"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-Wd-xEC">
+                                            <rect key="frame" x="8" y="233" width="398" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="Bym-8j-7rv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BookDetails" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-4j-GlK">
+                                            <rect key="frame" x="8" y="255" width="398" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="JDj-wY-QZf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="lEX-5F-K64" secondAttribute="trailing" constant="8" id="4gP-le-QBM"/>
+                                        <constraint firstItem="iYh-Wd-xEC" firstAttribute="leading" secondItem="31P-EB-0iB" secondAttribute="leading" constant="8" id="7ze-k0-6CN"/>
+                                        <constraint firstAttribute="trailing" secondItem="TA4-4j-GlK" secondAttribute="trailing" constant="8" id="Aa9-Kv-4GM"/>
+                                        <constraint firstItem="lEX-5F-K64" firstAttribute="top" secondItem="31P-EB-0iB" secondAttribute="top" constant="8" id="F6G-IB-4fJ"/>
+                                        <constraint firstItem="iYh-Wd-xEC" firstAttribute="top" secondItem="lEX-5F-K64" secondAttribute="bottom" id="IZA-43-TOe"/>
+                                        <constraint firstItem="TA4-4j-GlK" firstAttribute="leading" secondItem="31P-EB-0iB" secondAttribute="leading" constant="8" id="fLg-l6-orf"/>
+                                        <constraint firstAttribute="trailing" secondItem="iYh-Wd-xEC" secondAttribute="trailing" constant="8" id="hMH-Da-NwH"/>
+                                        <constraint firstItem="TA4-4j-GlK" firstAttribute="top" secondItem="iYh-Wd-xEC" secondAttribute="bottom" id="ooY-4E-tkI"/>
+                                        <constraint firstAttribute="bottom" secondItem="TA4-4j-GlK" secondAttribute="bottom" constant="8" id="rDg-kK-gBc"/>
+                                        <constraint firstItem="lEX-5F-K64" firstAttribute="leading" secondItem="31P-EB-0iB" secondAttribute="leading" constant="8" id="yKC-yM-6Tq"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="414" height="285"/>
+                                <connections>
+                                    <outlet property="subtitleLabel" destination="TA4-4j-GlK" id="uNo-rt-1q7"/>
+                                    <outlet property="thumbnailView" destination="qNm-HZ-PF5" id="D0Y-8L-gAy"/>
+                                    <outlet property="titleLabel" destination="iYh-Wd-xEC" id="6sj-De-lkG"/>
+                                    <segue destination="D6i-R4-ep8" kind="show" id="23s-R5-jdx"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -57,11 +111,11 @@
             <objects>
                 <viewController id="D6i-R4-ep8" customClass="ViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeC-Rf-9nA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-71-No3" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-gE-rFp">
                                         <rect key="frame" x="120" y="86" width="175" height="166"/>
@@ -71,7 +125,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="0.95068500847216475" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-v7-vIO" userLabel="DownView">
-                                <rect key="frame" x="0.0" y="296" width="414" height="600"/>
+                                <rect key="frame" x="0.0" y="208" width="414" height="600"/>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -275,6 +329,7 @@
     </scenes>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
+        <image name="bk6" width="560" height="423"/>
         <image name="icons8-bookmark" width="32" height="32"/>
         <image name="icons8-home" width="32" height="32"/>
         <image name="icons8-search" width="32" height="32"/>

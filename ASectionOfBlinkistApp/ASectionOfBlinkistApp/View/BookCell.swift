@@ -9,6 +9,16 @@ import UIKit
 
 class BookCell: UICollectionViewCell {
     
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var name: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var thumbnailView: UIImageView!
+    
+    var book: Book? {
+      didSet {
+        thumbnailView.image = book?.thumbnail
+        titleLabel.text = book?.title
+        subtitleLabel.text = "\(book?.lessonCount ?? 0) lessons"
+      }
+    }
+    
 }

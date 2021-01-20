@@ -19,6 +19,8 @@
 		047990AC25B7336000A7CDEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990AB25B7336000A7CDEC /* HomeViewController.swift */; };
 		047990AF25B7351600A7CDEC /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990AE25B7351600A7CDEC /* BookCell.swift */; };
 		047990BA25B78F0C00A7CDEC /* HomeBookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990B925B78F0C00A7CDEC /* HomeBookHeaderView.swift */; };
+		047990C025B7C03B00A7CDEC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990BF25B7C03A00A7CDEC /* Book.swift */; };
+		047990C325B7CB0600A7CDEC /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990C225B7CB0600A7CDEC /* UIView+IBInspectable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		047990AB25B7336000A7CDEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		047990AE25B7351600A7CDEC /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		047990B925B78F0C00A7CDEC /* HomeBookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBookHeaderView.swift; sourceTree = "<group>"; };
+		047990BF25B7C03A00A7CDEC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		047990C225B7CB0600A7CDEC /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				0479908625B6594500A7CDEC /* View */,
 				0479908525B6593C00A7CDEC /* Controllers */,
 				0479908425B6592E00A7CDEC /* Resources */,
+				047990BF25B7C03A00A7CDEC /* Book.swift */,
+				047990C225B7CB0600A7CDEC /* UIView+IBInspectable.swift */,
 			);
 			path = ASectionOfBlinkistApp;
 			sourceTree = "<group>";
@@ -193,8 +199,10 @@
 				0479904625B55B0A00A7CDEC /* AppDelegate.swift in Sources */,
 				047990BA25B78F0C00A7CDEC /* HomeBookHeaderView.swift in Sources */,
 				047990AF25B7351600A7CDEC /* BookCell.swift in Sources */,
+				047990C325B7CB0600A7CDEC /* UIView+IBInspectable.swift in Sources */,
 				0479907725B63E1E00A7CDEC /* LibraryCollectionViewController.swift in Sources */,
 				047990AC25B7336000A7CDEC /* HomeViewController.swift in Sources */,
+				047990C025B7C03B00A7CDEC /* Book.swift in Sources */,
 				0479904825B55B0A00A7CDEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
