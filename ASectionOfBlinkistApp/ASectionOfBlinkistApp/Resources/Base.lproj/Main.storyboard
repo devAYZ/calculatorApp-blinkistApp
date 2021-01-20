@@ -52,7 +52,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="Bym-8j-7rv"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -65,6 +65,13 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da9-C8-sJM">
+                                            <rect key="frame" x="364" y="245" width="42" height="32"/>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                            <state key="normal" title="More">
+                                                <color key="titleColor" red="0.61614014500000003" green="0.80012292799999996" blue="0.51723443889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.123231627" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
@@ -72,9 +79,11 @@
                                         <constraint firstItem="iYh-Wd-xEC" firstAttribute="leading" secondItem="31P-EB-0iB" secondAttribute="leading" constant="8" id="7ze-k0-6CN"/>
                                         <constraint firstAttribute="trailing" secondItem="TA4-4j-GlK" secondAttribute="trailing" constant="8" id="Aa9-Kv-4GM"/>
                                         <constraint firstItem="lEX-5F-K64" firstAttribute="top" secondItem="31P-EB-0iB" secondAttribute="top" constant="8" id="F6G-IB-4fJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="Da9-C8-sJM" secondAttribute="bottom" constant="8" id="FuO-UN-Agl"/>
                                         <constraint firstItem="iYh-Wd-xEC" firstAttribute="top" secondItem="lEX-5F-K64" secondAttribute="bottom" id="IZA-43-TOe"/>
                                         <constraint firstItem="TA4-4j-GlK" firstAttribute="leading" secondItem="31P-EB-0iB" secondAttribute="leading" constant="8" id="fLg-l6-orf"/>
                                         <constraint firstAttribute="trailing" secondItem="iYh-Wd-xEC" secondAttribute="trailing" constant="8" id="hMH-Da-NwH"/>
+                                        <constraint firstAttribute="trailing" secondItem="Da9-C8-sJM" secondAttribute="trailing" constant="8" id="k6t-dD-7Nl"/>
                                         <constraint firstItem="TA4-4j-GlK" firstAttribute="top" secondItem="iYh-Wd-xEC" secondAttribute="bottom" id="ooY-4E-tkI"/>
                                         <constraint firstAttribute="bottom" secondItem="TA4-4j-GlK" secondAttribute="bottom" constant="8" id="rDg-kK-gBc"/>
                                         <constraint firstItem="lEX-5F-K64" firstAttribute="leading" secondItem="31P-EB-0iB" secondAttribute="leading" constant="8" id="yKC-yM-6Tq"/>

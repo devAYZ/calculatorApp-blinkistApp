@@ -13,7 +13,6 @@
 		0479904D25B55B0A00A7CDEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0479904B25B55B0A00A7CDEC /* Main.storyboard */; };
 		0479904F25B55B0D00A7CDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0479904E25B55B0D00A7CDEC /* Assets.xcassets */; };
 		0479905225B55B0D00A7CDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0479905025B55B0D00A7CDEC /* LaunchScreen.storyboard */; };
-		0479907125B638A400A7CDEC /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479907025B638A400A7CDEC /* HomeCollectionViewController.swift */; };
 		0479907425B63E0000A7CDEC /* ExploreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479907325B63E0000A7CDEC /* ExploreCollectionViewController.swift */; };
 		0479907725B63E1E00A7CDEC /* LibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */; };
 		047990AC25B7336000A7CDEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047990AB25B7336000A7CDEC /* HomeViewController.swift */; };
@@ -32,7 +31,6 @@
 		0479904E25B55B0D00A7CDEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0479905125B55B0D00A7CDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0479905325B55B0D00A7CDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0479907025B638A400A7CDEC /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		0479907325B63E0000A7CDEC /* ExploreCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewController.swift; sourceTree = "<group>"; };
 		0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
 		047990AB25B7336000A7CDEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -79,8 +77,6 @@
 				0479908625B6594500A7CDEC /* View */,
 				0479908525B6593C00A7CDEC /* Controllers */,
 				0479908425B6592E00A7CDEC /* Resources */,
-				047990BF25B7C03A00A7CDEC /* Book.swift */,
-				047990C225B7CB0600A7CDEC /* UIView+IBInspectable.swift */,
 			);
 			path = ASectionOfBlinkistApp;
 			sourceTree = "<group>";
@@ -91,6 +87,7 @@
 				0479904E25B55B0D00A7CDEC /* Assets.xcassets */,
 				0479904B25B55B0A00A7CDEC /* Main.storyboard */,
 				0479905025B55B0D00A7CDEC /* LaunchScreen.storyboard */,
+				047990BF25B7C03A00A7CDEC /* Book.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -99,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				0479904925B55B0A00A7CDEC /* BookViewController.swift */,
-				0479907025B638A400A7CDEC /* HomeCollectionViewController.swift */,
 				0479907325B63E0000A7CDEC /* ExploreCollectionViewController.swift */,
 				0479907625B63E1E00A7CDEC /* LibraryCollectionViewController.swift */,
 				047990AB25B7336000A7CDEC /* HomeViewController.swift */,
@@ -119,6 +115,7 @@
 		0479908725B6597100A7CDEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				047990C225B7CB0600A7CDEC /* UIView+IBInspectable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,7 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0479904A25B55B0A00A7CDEC /* BookViewController.swift in Sources */,
-				0479907125B638A400A7CDEC /* HomeCollectionViewController.swift in Sources */,
 				0479907425B63E0000A7CDEC /* ExploreCollectionViewController.swift in Sources */,
 				0479904625B55B0A00A7CDEC /* AppDelegate.swift in Sources */,
 				047990BA25B78F0C00A7CDEC /* HomeBookHeaderView.swift in Sources */,

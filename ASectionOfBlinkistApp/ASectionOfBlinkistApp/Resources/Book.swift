@@ -34,8 +34,7 @@ class Book: Hashable {
     
   }
 
-
-// MARK: - Video Sample Data
+// MARK: - Book Data
 extension Book {
   static let allBooks = [
     Book(
@@ -51,8 +50,8 @@ extension Book {
       link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "How to become Chika in 24 hours",
-      thumbnail: UIImage(named: "bk3"),
+      title: "Complete PHP 10.2",
+      thumbnail: UIImage(named: "bk2"),
       lessonCount: 46,
       link: URL(string: "https://www.google.com/")
     ),
@@ -75,8 +74,8 @@ extension Book {
       link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Complete PHP 10.2",
-      thumbnail: UIImage(named: "bk2"),
+      title: "How to become Chika in 24 hours",
+      thumbnail: UIImage(named: "bk3"),
       lessonCount: 26,
       link: URL(string: "https://www.google.com/")
     ),
@@ -87,7 +86,7 @@ extension Book {
       link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Connet with Ayo",
+      title: "Connect with Ayo",
       thumbnail: UIImage(named: "bk9"),
       lessonCount: 31,
       link: URL(string: "https://www.google.com")

@@ -10,47 +10,10 @@ import SafariServices
 
 class HomeViewController: UICollectionViewController {
     
- /*
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-        view.addSubview(collectionView)
-
-        // Do any additional setup after loading the view.
-        
-        collectionView.delegate = self
-        collectionView.dataSource = self
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.width/2)
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        100
-    }
-    
-    
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Book", for: indexPath) as? BookCell else{
-            fatalError("Unable to dequeue Book Cell")
-        }
-        
-        return cell
-    }
-
-    
-    */
-    
-    
-    
 
        // MARK: - Properties
        private var bookList = Book.allBooks
-       private var searchController = UISearchController(searchResultsController: nil)
+//       private var searchController = UISearchController(searchResultsController: nil)
        private lazy var dataSource = makeDataSource()
 
        
@@ -67,8 +30,8 @@ class HomeViewController: UICollectionViewController {
        // MARK: - Life Cycles
        override func viewDidLoad() {
          super.viewDidLoad()
-         view.backgroundColor = .white
-         configureSearchController()
+//         view.backgroundColor = .white
+//         configureSearchController()
          configureLayout()
          
          applySnapshot(animatingDifferences: false)
@@ -107,54 +70,56 @@ class HomeViewController: UICollectionViewController {
 }
 
 
-     // MARK: - UICollectionViewDelegate
-     extension HomeViewController{
-       override func collectionView(
-         _ collectionView: UICollectionView,
-         didSelectItemAt indexPath: IndexPath
-       ) {
-         
-         guard let book = dataSource.itemIdentifier(for: indexPath) else {
-           return
-         }
+//     // MARK: - UICollectionViewDelegate
+//     extension HomeViewController{
+//       override func collectionView(
+//         _ collectionView: UICollectionView,
+//         didSelectItemAt indexPath: IndexPath
+//       ) {
+//
+//         guard let book = dataSource.itemIdentifier(for: indexPath) else {
+//           return
+//         }
+//
+//         guard let link = book.link else {
+//           print("Invalid link")
+//           return
+//         }
+//         let safariViewController = SFSafariViewController(url: link)
+//         present(safariViewController, animated: true, completion: nil)
+//       }
+//     }
 
-         guard let link = book.link else {
-           print("Invalid link")
-           return
-         }
-         let safariViewController = SFSafariViewController(url: link)
-         present(safariViewController, animated: true, completion: nil)
-       }
-     }
+//     // MARK: - UISearchResultsUpdating Delegate
+//     extension HomeViewController: UISearchResultsUpdating {
+//       func updateSearchResults(for searchController: UISearchController) {
+//         bookList = filteredVideos(for: searchController.searchBar.text)
+//         collectionView.reloadData()
+//       }
+//
+//       func filteredVideos(for queryOrNil: String?) -> [Book] {
+//         let books = Book.allBooks
+//         guard
+//           let query = queryOrNil,
+//           !query.isEmpty
+//           else {
+//             return books
+//         }
+//         return books.filter {
+//           return $0.title.lowercased().contains(query.lowercased())
+//         }
+//       }
+//
+//       func configureSearchController() {
+//         searchController.searchResultsUpdater = self
+//         searchController.obscuresBackgroundDuringPresentation = false
+//         searchController.searchBar.placeholder = "Search fo Books"
+//         navigationItem.searchController = searchController
+//         definesPresentationContext = true
+//       }
+//     }
 
-     // MARK: - UISearchResultsUpdating Delegate
-     extension HomeViewController: UISearchResultsUpdating {
-       func updateSearchResults(for searchController: UISearchController) {
-         bookList = filteredVideos(for: searchController.searchBar.text)
-         collectionView.reloadData()
-       }
-       
-       func filteredVideos(for queryOrNil: String?) -> [Book] {
-         let books = Book.allBooks
-         guard
-           let query = queryOrNil,
-           !query.isEmpty
-           else {
-             return books
-         }
-         return books.filter {
-           return $0.title.lowercased().contains(query.lowercased())
-         }
-       }
-       
-       func configureSearchController() {
-         searchController.searchResultsUpdater = self
-         searchController.obscuresBackgroundDuringPresentation = false
-         searchController.searchBar.placeholder = "Search fo Books"
-         navigationItem.searchController = searchController
-         definesPresentationContext = true
-       }
-     }
+
 
      // MARK: - Layout Handling
      extension HomeViewController {
@@ -183,14 +148,9 @@ class HomeViewController: UICollectionViewController {
        }
      }
 
-     // MARK: - SFSafariViewControllerDelegate Implementation
-     extension HomeViewController: SFSafariViewControllerDelegate {
-       func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-         controller.dismiss(animated: true, completion: nil)
-       }
-     }
-
-
-
-
-
+//     // MARK: - SFSafariViewControllerDelegate Implementation
+//     extension HomeViewController: SFSafariViewControllerDelegate {
+//       func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+//         controller.dismiss(animated: true, completion: nil)
+//       }
+//     }
