@@ -8,16 +8,24 @@
 import UIKit
 
 class HomeViewController: UICollectionViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        view.addSubview(collectionView)
 
         // Do any additional setup after loading the view.
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-//        return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.width/2)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+        return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.width/2)
+    }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         100

@@ -19,62 +19,22 @@
                         <color key="backgroundColor" red="0.0" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jDf-1c-Bae">
-                            <size key="itemSize" width="140" height="180"/>
-                            <size key="headerReferenceSize" width="50" height="80"/>
+                            <size key="itemSize" width="414" height="285"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Book" id="eHc-Zm-WdG" customClass="BookCell" customModule="ASectionOfBlinkistApp" customModuleProvider="target">
-                                <rect key="frame" x="15" y="95" width="140" height="180"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nwb-PP-Evs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FBi-6O-lL8">
-                                    <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="31P-EB-0iB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IK0-K9-owq">
-                                            <rect key="frame" x="10" y="10" width="120" height="120"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXZ-N1-Jz4">
-                                            <rect key="frame" x="10" y="134" width="120" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="imageView" destination="IK0-K9-owq" id="0rv-7N-Hh7"/>
-                                    <outlet property="name" destination="DXZ-N1-Jz4" id="i4d-cc-sql"/>
-                                    <segue destination="D6i-R4-ep8" kind="show" id="QfO-Kd-T71"/>
-                                </connections>
+                                <size key="customSize" width="414" height="285"/>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HomeBookHeaderView" id="moT-g0-wLl" customClass="HomeBookHeaderView" customModule="ASectionOfBlinkistApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuT-4b-I9L">
-                                    <rect key="frame" x="344" y="23" width="47" height="34"/>
-                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
-                                    <state key="normal" title="More">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.22877844375054707" blue="0.0" alpha="0.61525994105054838" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="bottomMargin" secondItem="FuT-4b-I9L" secondAttribute="bottom" constant="15" id="CLF-Cz-rAS"/>
-                                <constraint firstAttribute="trailingMargin" secondItem="FuT-4b-I9L" secondAttribute="trailing" constant="15" id="bV0-2I-Ryv"/>
-                                <constraint firstItem="FuT-4b-I9L" firstAttribute="centerY" secondItem="moT-g0-wLl" secondAttribute="centerY" id="lgt-c3-aaj"/>
-                            </constraints>
-                            <connections>
-                                <outlet property="moreBtn" destination="FuT-4b-I9L" id="5v7-aB-evV"/>
-                            </connections>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="7Rf-qM-QlQ" id="n8A-Dm-Xpt"/>
                             <outlet property="delegate" destination="7Rf-qM-QlQ" id="DfC-5l-cyY"/>
@@ -97,11 +57,11 @@
             <objects>
                 <viewController id="D6i-R4-ep8" customClass="ViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeC-Rf-9nA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-71-No3" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-gE-rFp">
                                         <rect key="frame" x="120" y="86" width="175" height="166"/>
@@ -111,7 +71,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="0.95068500847216475" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-v7-vIO" userLabel="DownView">
-                                <rect key="frame" x="0.0" y="208" width="414" height="600"/>
+                                <rect key="frame" x="0.0" y="296" width="414" height="600"/>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
