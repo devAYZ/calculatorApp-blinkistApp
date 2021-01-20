@@ -156,7 +156,7 @@ class ViewController: UIViewController {
             display.text! += ""
         }else{
             let exp: NSExpression = NSExpression(format: display.text!)
-            let result = exp.expressionValue(with:nil, context: nil) as! Double
+            let result: Double = exp.expressionValue(with:nil, context: nil) as! Double
             display.text! = String(result)
         }
         
