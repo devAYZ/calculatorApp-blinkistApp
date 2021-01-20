@@ -39,7 +39,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="398" height="217"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="qNm-HZ-PF5" secondAttribute="bottom" constant="8" id="B6D-Sa-Xfm"/>
                                                 <constraint firstAttribute="trailing" secondItem="qNm-HZ-PF5" secondAttribute="trailing" id="FKR-cR-Ai5"/>
@@ -47,13 +47,13 @@
                                                 <constraint firstItem="qNm-HZ-PF5" firstAttribute="top" secondItem="lEX-5F-K64" secondAttribute="top" id="jhH-jj-g1e"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-Wd-xEC">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-Wd-xEC">
                                             <rect key="frame" x="8" y="233" width="398" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="Bym-8j-7rv"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BookDetails" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-4j-GlK">
@@ -62,11 +62,11 @@
                                                 <constraint firstAttribute="height" constant="22" id="JDj-wY-QZf"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.0" green="0.123231627" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="lEX-5F-K64" secondAttribute="trailing" constant="8" id="4gP-le-QBM"/>
                                         <constraint firstItem="iYh-Wd-xEC" firstAttribute="leading" secondItem="31P-EB-0iB" secondAttribute="leading" constant="8" id="7ze-k0-6CN"/>

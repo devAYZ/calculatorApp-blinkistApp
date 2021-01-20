@@ -17,7 +17,7 @@ class BookCell: UICollectionViewCell {
       didSet {
         thumbnailView.image = book?.thumbnail
         titleLabel.text = book?.title
-        subtitleLabel.text = "\(book?.lessonCount ?? 0) lessons"
+        subtitleLabel.text = "\(book?.lessonCount ?? 0) Chapters"
       }
     }
     

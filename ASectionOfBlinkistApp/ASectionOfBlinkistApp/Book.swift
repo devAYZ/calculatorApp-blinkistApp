@@ -39,58 +39,58 @@ class Book: Hashable {
 extension Book {
   static let allBooks = [
     Book(
-      title: "SwiftUI",
-      thumbnail: UIImage(named: "bk1"),
+      title: "Badass Programmer \n How to become a Badass Programmer",
+      thumbnail: UIImage(named: "bk8"),
       lessonCount: 37,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Data Structures & Algorithms in Swift",
-      thumbnail: UIImage(named: "bk2"),
+      title: "Programming with Decagon",
+      thumbnail: UIImage(named: "bk7"),
       lessonCount: 29,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Beginning ARKit",
+      title: "How to become Chika in 24 hours",
       thumbnail: UIImage(named: "bk3"),
       lessonCount: 46,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Fastlane for iOS",
+      title: "Advanced Software Engineer",
       thumbnail: UIImage(named: "bk4"),
       lessonCount: 44,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Machine Learning in iOS",
+      title: "Festive and Festival",
       thumbnail: UIImage(named: "bk5"),
       lessonCount: 15,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Beginning RxSwift",
+      title: "Algorithm Master",
       thumbnail: UIImage(named: "bk6"),
       lessonCount: 39,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Demystifying Views in iOS",
-      thumbnail: UIImage(named: "bk4"),
+      title: "Complete PHP 10.2",
+      thumbnail: UIImage(named: "bk2"),
       lessonCount: 26,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Push Notifications",
+      title: "Dart/Flutter vs Swift/NS",
       thumbnail: UIImage(named: "bk1"),
       lessonCount: 33,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com/")
     ),
     Book(
-      title: "Reproducing Popular iOS Controls",
-      thumbnail: UIImage(named: "bk4"),
+      title: "Connet with Ayo",
+      thumbnail: UIImage(named: "bk9"),
       lessonCount: 31,
-      link: URL(string: "https://google.com")
+      link: URL(string: "https://www.google.com")
     )
   ]
 }
