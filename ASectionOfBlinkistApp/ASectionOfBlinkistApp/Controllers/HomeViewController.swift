@@ -10,10 +10,8 @@ import SafariServices
 
 class HomeViewController: UICollectionViewController {
     
-
        // MARK: - Properties
        private var bookList = Book.allBooks
-//       private var searchController = UISearchController(searchResultsController: nil)
        private lazy var dataSource = makeDataSource()
 
        
@@ -26,12 +24,9 @@ class HomeViewController: UICollectionViewController {
        typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Book>
 
 
-       
        // MARK: - Life Cycles
        override func viewDidLoad() {
          super.viewDidLoad()
-//         view.backgroundColor = .white
-//         configureSearchController()
          configureLayout()
          
          applySnapshot(animatingDifferences: false)
@@ -69,58 +64,6 @@ class HomeViewController: UICollectionViewController {
 
 }
 
-
-//     // MARK: - UICollectionViewDelegate
-//     extension HomeViewController{
-//       override func collectionView(
-//         _ collectionView: UICollectionView,
-//         didSelectItemAt indexPath: IndexPath
-//       ) {
-//
-//         guard let book = dataSource.itemIdentifier(for: indexPath) else {
-//           return
-//         }
-//
-//         guard let link = book.link else {
-//           print("Invalid link")
-//           return
-//         }
-//         let safariViewController = SFSafariViewController(url: link)
-//         present(safariViewController, animated: true, completion: nil)
-//       }
-//     }
-
-//     // MARK: - UISearchResultsUpdating Delegate
-//     extension HomeViewController: UISearchResultsUpdating {
-//       func updateSearchResults(for searchController: UISearchController) {
-//         bookList = filteredVideos(for: searchController.searchBar.text)
-//         collectionView.reloadData()
-//       }
-//
-//       func filteredVideos(for queryOrNil: String?) -> [Book] {
-//         let books = Book.allBooks
-//         guard
-//           let query = queryOrNil,
-//           !query.isEmpty
-//           else {
-//             return books
-//         }
-//         return books.filter {
-//           return $0.title.lowercased().contains(query.lowercased())
-//         }
-//       }
-//
-//       func configureSearchController() {
-//         searchController.searchResultsUpdater = self
-//         searchController.obscuresBackgroundDuringPresentation = false
-//         searchController.searchBar.placeholder = "Search fo Books"
-//         navigationItem.searchController = searchController
-//         definesPresentationContext = true
-//       }
-//     }
-
-
-
      // MARK: - Layout Handling
      extension HomeViewController {
        private func configureLayout() {
@@ -147,10 +90,3 @@ class HomeViewController: UICollectionViewController {
          }, completion: nil)
        }
      }
-
-//     // MARK: - SFSafariViewControllerDelegate Implementation
-//     extension HomeViewController: SFSafariViewControllerDelegate {
-//       func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-//         controller.dismiss(animated: true, completion: nil)
-//       }
-//     }
