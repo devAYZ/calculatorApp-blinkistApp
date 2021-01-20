@@ -47,3 +47,5 @@ Replicate the iOS inbuilt Calculator App design and functionality. App should be
 Using your understanding of stackView, size class and autoLayout create a functional calculator that is responsive on ipads and iphones. 
 
  
+ # Calculator Demo link
+ https://decagonins-my.sharepoint.com/:v:/g/personal/ayokunle_fatokimi_decagon_dev/Ecgz5uNSLlJKrTUkacHfYWgB_gmwdVNSdFtYDhXrWpDRww?e=URO1Ay
