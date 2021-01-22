@@ -11,7 +11,7 @@ class ABookFromHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        roundFirstBtn.layer.cornerRadius = 25
+        roundFirstBtn.layer.cornerRadius = 20
         roundFirstBtn.clipsToBounds = true
     }
 
