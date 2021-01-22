@@ -7,15 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ABookFromHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        roundBuyBook.layer.cornerRadius = 25
-//        roundBuyBook.clipsToBounds = true
+        roundFirstBtn.layer.cornerRadius = 25
+        roundFirstBtn.clipsToBounds = true
     }
 
-
+    @IBOutlet weak var roundFirstBtn: UIButton!
+    
 }
 

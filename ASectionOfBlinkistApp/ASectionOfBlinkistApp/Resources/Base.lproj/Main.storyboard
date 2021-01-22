@@ -66,6 +66,7 @@
                                     <outlet property="bookImage" destination="nwo-7N-Brf" id="ktV-lz-Q0M"/>
                                     <outlet property="bookInfo" destination="rhR-ld-UWT" id="0DG-R0-dlI"/>
                                     <outlet property="bookTitle" destination="4ju-9P-wpH" id="BYx-lY-LgI"/>
+                                    <segue destination="BrS-1x-Vhn" kind="show" id="M1i-sf-QVx"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -86,82 +87,135 @@
             </objects>
             <point key="canvasLocation" x="-1042.0289855072465" y="379.6875"/>
         </scene>
+        <!--Book From Home View Controller-->
+        <scene sceneID="UEg-st-nrL">
+            <objects>
+                <viewController id="BrS-1x-Vhn" customClass="ABookFromHomeViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IBP-i5-SQV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book3" translatesAutoresizingMaskIntoConstraints="NO" id="3kQ-d4-rTW">
+                                <rect key="frame" x="117" y="100" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Hjv-Bl-mht"/>
+                                    <constraint firstAttribute="width" constant="180" id="ssy-2h-ewG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuG-dB-biV">
+                                <rect key="frame" x="79" y="303" width="257" height="53"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="SyM-k6-dmq"/>
+                                    <constraint firstAttribute="height" constant="53" id="mHl-OC-4g3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <state key="normal" title="⏍  Buy Sample Book  -$100.00">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Acy-Wq-nwn"/>
+                        <color key="backgroundColor" red="0.0" green="0.038667418019999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WuG-dB-biV" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" constant="0.5" id="46I-ML-3wd"/>
+                            <constraint firstItem="3kQ-d4-rTW" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" id="9xt-Eh-miZ"/>
+                            <constraint firstItem="3kQ-d4-rTW" firstAttribute="top" secondItem="Acy-Wq-nwn" secondAttribute="top" constant="100" id="cye-rf-wxm"/>
+                            <constraint firstItem="WuG-dB-biV" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" constant="0.5" id="iCg-15-bkC"/>
+                            <constraint firstItem="WuG-dB-biV" firstAttribute="top" secondItem="3kQ-d4-rTW" secondAttribute="bottom" constant="23" id="sqd-L4-0V9"/>
+                            <constraint firstItem="WuG-dB-biV" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" constant="0.5" id="tcd-bH-Vw4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qEl-sH-kkH"/>
+                    <connections>
+                        <outlet property="roundFirstBtn" destination="WuG-dB-biV" id="QDu-fl-dPD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ly8-xl-toy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1126.0869565217392" y="1186.6071428571429"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="bMg-Nk-HkG">
             <objects>
-                <viewController id="D6i-R4-ep8" customClass="ViewController" customModule="ASectionOfBlinkistApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D6i-R4-ep8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeC-Rf-9nA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-71-No3" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-gE-rFp">
-                                        <rect key="frame" x="157" y="78.5" width="100" height="139"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book3" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-De-lsP">
+                                        <rect key="frame" x="117" y="14" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="Wpp-gU-83o"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="0.95068500847216475" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="W7I-gE-rFp" firstAttribute="centerY" secondItem="Vdn-71-No3" secondAttribute="centerY" id="aLB-Zc-yrp"/>
-                                    <constraint firstItem="W7I-gE-rFp" firstAttribute="centerX" secondItem="Vdn-71-No3" secondAttribute="centerX" id="hyK-Gc-hog"/>
+                                    <constraint firstAttribute="trailing" secondItem="xDF-De-lsP" secondAttribute="trailing" constant="117" id="8TM-5V-qzK"/>
+                                    <constraint firstItem="xDF-De-lsP" firstAttribute="top" secondItem="Vdn-71-No3" secondAttribute="top" constant="14" id="IIg-Af-q7q"/>
+                                    <constraint firstItem="xDF-De-lsP" firstAttribute="leading" secondItem="Vdn-71-No3" secondAttribute="leading" constant="117" id="S7D-gX-pJs"/>
+                                    <constraint firstItem="xDF-De-lsP" firstAttribute="centerX" secondItem="Vdn-71-No3" secondAttribute="centerX" id="ajg-zH-Yql"/>
+                                    <constraint firstItem="xDF-De-lsP" firstAttribute="centerY" secondItem="Vdn-71-No3" secondAttribute="centerY" constant="-30.5" id="syg-nJ-o5m"/>
+                                    <constraint firstAttribute="bottom" secondItem="xDF-De-lsP" secondAttribute="bottom" constant="75" id="zO3-Xv-Jdq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-v7-vIO" userLabel="DownView">
-                                <rect key="frame" x="0.0" y="296" width="414" height="600"/>
+                                <rect key="frame" x="0.0" y="267" width="414" height="541"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lZI-f9-zjf">
-                                        <rect key="frame" x="111.5" y="193" width="191" height="37"/>
+                                        <rect key="frame" x="111.5" y="134" width="191" height="37"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAO-F7-Ias">
+                                        <rect key="frame" x="35" y="-61" width="344" height="122"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <state key="normal" title="⏍  Buy Sample Book  -$100.00">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buyBook:" destination="D6i-R4-ep8" eventType="touchUpInside" id="QHX-Uh-Jfy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.13725490196078433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="lZI-f9-zjf" firstAttribute="centerX" secondItem="Swo-v7-vIO" secondAttribute="centerX" id="Hng-GK-doj"/>
+                                    <constraint firstItem="dAO-F7-Ias" firstAttribute="centerX" secondItem="Swo-v7-vIO" secondAttribute="centerX" id="P3v-7o-yuB"/>
                                     <constraint firstAttribute="bottom" secondItem="lZI-f9-zjf" secondAttribute="bottom" constant="370" id="Tjs-Ty-DVK"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAO-F7-Ias">
-                                <rect key="frame" x="35" y="236" width="344" height="148"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <state key="normal" title="⏍  Buy Sample Book  -$100.00">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
-                                </state>
-                                <connections>
-                                    <action selector="buyBook:" destination="D6i-R4-ep8" eventType="touchUpInside" id="QHX-Uh-Jfy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wuF-Lo-R0E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Swo-v7-vIO" secondAttribute="bottom" id="8c6-jg-StT"/>
-                            <constraint firstItem="wuF-Lo-R0E" firstAttribute="bottom" secondItem="dAO-F7-Ias" secondAttribute="bottom" constant="478" id="9iq-i4-haO"/>
                             <constraint firstItem="Vdn-71-No3" firstAttribute="top" secondItem="zeC-Rf-9nA" secondAttribute="top" id="DyS-fa-MZS"/>
-                            <constraint firstItem="dAO-F7-Ias" firstAttribute="top" secondItem="wuF-Lo-R0E" secondAttribute="top" constant="192" id="Jff-Y2-kLz"/>
-                            <constraint firstItem="Swo-v7-vIO" firstAttribute="top" secondItem="Vdn-71-No3" secondAttribute="bottom" id="Jnc-Mm-GmB"/>
-                            <constraint firstItem="dAO-F7-Ias" firstAttribute="leading" secondItem="wuF-Lo-R0E" secondAttribute="leading" constant="35" id="O8J-Le-86s"/>
+                            <constraint firstItem="Swo-v7-vIO" firstAttribute="top" secondItem="Vdn-71-No3" secondAttribute="bottom" constant="-2" id="Jnc-Mm-GmB"/>
                             <constraint firstItem="Vdn-71-No3" firstAttribute="leading" secondItem="zeC-Rf-9nA" secondAttribute="leading" id="ZWf-te-et9"/>
                             <constraint firstItem="Swo-v7-vIO" firstAttribute="leading" secondItem="zeC-Rf-9nA" secondAttribute="leading" id="bhj-sF-Kcb"/>
                             <constraint firstAttribute="trailing" secondItem="Swo-v7-vIO" secondAttribute="trailing" id="dUn-8y-lPU"/>
                             <constraint firstAttribute="trailing" secondItem="Vdn-71-No3" secondAttribute="trailing" id="pZu-FO-Xrh"/>
-                            <constraint firstItem="wuF-Lo-R0E" firstAttribute="trailing" secondItem="dAO-F7-Ias" secondAttribute="trailing" constant="35" id="s6U-ra-94J"/>
-                            <constraint firstAttribute="bottom" secondItem="Vdn-71-No3" secondAttribute="bottom" constant="600" id="uvZ-Q1-UgM"/>
+                            <constraint firstAttribute="bottom" secondItem="Vdn-71-No3" secondAttribute="bottom" constant="539" id="uvZ-Q1-UgM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="uOT-de-imE"/>
                     <connections>
                         <outlet property="roundBuyBook" destination="dAO-F7-Ias" id="vhb-Mq-JQy"/>
+                        <outlet property="roundFirstBtn" destination="dAO-F7-Ias" id="uHT-MH-Rri"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzK-Fe-6BG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1042" y="1083"/>
+            <point key="canvasLocation" x="-143" y="1187"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qGD-zu-EEJ">
@@ -345,11 +399,11 @@
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
         <image name="book1c" width="180" height="180"/>
+        <image name="book3" width="683" height="1024"/>
         <image name="icons8-bookmark" width="32" height="32"/>
         <image name="icons8-home" width="32" height="32"/>
         <image name="icons8-search" width="32" height="32"/>
         <image name="icons8-settings" width="25" height="25"/>
-        <image name="user" width="100" height="139"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
