@@ -50,5 +50,3 @@ Using your understanding of stackView, size class and autoLayout create a functi
  # Calculator Demo link
  https://decagonins-my.sharepoint.com/:v:/g/personal/ayokunle_fatokimi_decagon_dev/Ecgz5uNSLlJKrTUkacHfYWgB_gmwdVNSdFtYDhXrWpDRww?e=URO1Ay
  
- # Blinkist Demo Link
- https://decagonins-my.sharepoint.com/:v:/g/personal/ayokunle_fatokimi_decagon_dev/Ee98jmGzPNtKj-6YISekudYB69OKtXFfmn5mBek7FUbwzw?e=DyjOmp
