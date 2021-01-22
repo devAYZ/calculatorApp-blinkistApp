@@ -96,18 +96,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book3" translatesAutoresizingMaskIntoConstraints="NO" id="3kQ-d4-rTW">
-                                <rect key="frame" x="117" y="100" width="180" height="180"/>
+                                <rect key="frame" x="117" y="38" width="180" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="Hjv-Bl-mht"/>
                                     <constraint firstAttribute="width" constant="180" id="ssy-2h-ewG"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this page is under construction...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hrh-qV-zkN">
+                                <rect key="frame" x="61.5" y="392" width="291" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YEQ-rQ-WGt">
+                                <rect key="frame" x="188.5" y="430" width="37" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuG-dB-biV">
-                                <rect key="frame" x="79" y="303" width="257" height="53"/>
+                                <rect key="frame" x="79" y="235" width="257" height="43"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="257" id="SyM-k6-dmq"/>
-                                    <constraint firstAttribute="height" constant="53" id="mHl-OC-4g3"/>
+                                    <constraint firstAttribute="height" constant="43" id="mHl-OC-4g3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <state key="normal" title="⏍  Buy Sample Book  -$100.00">
@@ -120,10 +132,14 @@
                         <constraints>
                             <constraint firstItem="WuG-dB-biV" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" constant="0.5" id="46I-ML-3wd"/>
                             <constraint firstItem="3kQ-d4-rTW" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" id="9xt-Eh-miZ"/>
-                            <constraint firstItem="3kQ-d4-rTW" firstAttribute="top" secondItem="Acy-Wq-nwn" secondAttribute="top" constant="100" id="cye-rf-wxm"/>
+                            <constraint firstItem="YEQ-rQ-WGt" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" id="IVQ-YW-80L"/>
+                            <constraint firstItem="hrh-qV-zkN" firstAttribute="centerY" secondItem="IBP-i5-SQV" secondAttribute="centerY" id="UYa-UT-CN8"/>
+                            <constraint firstItem="hrh-qV-zkN" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" id="X60-g6-EAm"/>
+                            <constraint firstItem="3kQ-d4-rTW" firstAttribute="top" secondItem="Acy-Wq-nwn" secondAttribute="top" constant="38" id="cye-rf-wxm"/>
                             <constraint firstItem="WuG-dB-biV" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" constant="0.5" id="iCg-15-bkC"/>
-                            <constraint firstItem="WuG-dB-biV" firstAttribute="top" secondItem="3kQ-d4-rTW" secondAttribute="bottom" constant="23" id="sqd-L4-0V9"/>
+                            <constraint firstItem="WuG-dB-biV" firstAttribute="top" secondItem="3kQ-d4-rTW" secondAttribute="bottom" constant="17" id="sqd-L4-0V9"/>
                             <constraint firstItem="WuG-dB-biV" firstAttribute="centerX" secondItem="IBP-i5-SQV" secondAttribute="centerX" constant="0.5" id="tcd-bH-Vw4"/>
+                            <constraint firstItem="YEQ-rQ-WGt" firstAttribute="centerY" secondItem="IBP-i5-SQV" secondAttribute="centerY" constant="44.5" id="wjd-9b-nOL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qEl-sH-kkH"/>
