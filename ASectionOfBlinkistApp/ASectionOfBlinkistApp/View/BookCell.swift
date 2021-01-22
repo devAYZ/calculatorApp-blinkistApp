@@ -9,16 +9,15 @@ import UIKit
 
 class BookCell: UICollectionViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subtitleLabel: UILabel!
-    @IBOutlet weak var thumbnailView: UIImageView!
+    @IBOutlet weak var bookImage: UIImageView!
+    @IBOutlet weak var bookTitle: UILabel!
     
-    var book: Book? {
-      didSet {
-        thumbnailView.image = book?.thumbnail
-        titleLabel.text = book?.title
-        subtitleLabel.text = "\(book?.lessonCount ?? 0) Chapters"
-      }
+    @IBOutlet weak var bookInfo: UILabel!
+    
+    
+    func setup(with book: Book){
+        bookImage.image = book.bookImage
+        bookTitle.text = book.bookTitle
+        bookInfo.text = book.bookInfo
     }
-    
 }

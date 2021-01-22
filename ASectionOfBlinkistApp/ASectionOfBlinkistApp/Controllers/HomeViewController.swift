@@ -6,54 +6,35 @@
 //
 
 import UIKit
-import SafariServices
+
 
 class HomeViewController: UICollectionViewController {
     
-       // MARK: - Properties
-       private var bookList = Book.allBooks
-       private lazy var dataSource = makeDataSource()
-
-       
-       // MARK: - Value Types
-       enum Section {
-         case main
-       }
-       
-       typealias DataSource = UICollectionViewDiffableDataSource<Section, Book>
-       typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Book>
-
-       
-       // MARK: - Functions
-       func makeDataSource() -> DataSource {
-         // 1
-         let dataSource = DataSource(
-           collectionView: collectionView,
-           cellProvider: { (collectionView, indexPath, book) ->
-             UICollectionViewCell? in
-             // 2
-             let cell = collectionView.dequeueReusableCell(
-               withReuseIdentifier: "BookCell",
-               for: indexPath) as? BookCell
-             cell?.book = book
-             return cell
-         })
-         return dataSource
-       }
-       
-       // 1
-       func applySnapshot(animatingDifferences: Bool = true) {
-         // 2
-         var snapshot = Snapshot()
-         // 3
-         snapshot.appendSections([.main])
-         // 4
-         snapshot.appendItems(bookList)
-         // 5
-         dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
-       }
-
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+    }
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        books.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as! BookCell
+        cell.setup(with: books[indexPath.row])
+        
+        return cell
+    }
+    
 }
+
+
+ extension HomeViewController: UICollectionViewDelegateFlowLayout {
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+         return CGSize(width: 200, height: 300)
+     }
+ }
+
 
     
